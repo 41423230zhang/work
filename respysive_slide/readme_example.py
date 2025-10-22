@@ -78,32 +78,42 @@ CMSiMDE 是一套以 Python 和 Flask 框架開發的網際內容管理系統，
 slide5.add_content([content_cmsimde])
 p.add_slide(slide5)
 
-# === 最後一張投影片：感謝聆聽 ===
-slide6 = Slide(center=True)
-slide6.add_title('<span style="font-size:50px;">感謝聆聽<br>報告完畢</span>')
-p.add_slide(slide6)
-
-#===w7_1===
-slide7 = Slide()
-slide7.add_title('<span style="font-size:50px;">Brython 是什麼?</span>')
+#===w6_1 : Brython 是什麼 ===
+slide6 = Slide()
+slide6.add_title('<span style="font-size:50px;">Brython是什麼?</span>')
 content_cmsimde = """
 <p style="font-size:30px;">
 Brython 是一用來將Python的語言轉換成 JavaScript 來讓瀏覽器可以讀懂。
 </p>
 """
-slide5.add_content([content_cmsimde])
-p.add_slide(slide7)
-
+slide6.add_content([content_cmsimde])
+p.add_slide(slide6)
 
 #===w7_2===
-slide8 = Slide()
-slide8.add_title('<span style="font-size:50px;"> Brython 能做什麼？</span>')
+slide7 = Slide()
+slide7.add_title('<span style="font-size:50px;"> Brython 能做什麼？</span>')
 content_cmsimde = """
 <p style="font-size:30px;">
-Brython 由於不用下載 Python ，他可以直接在網路上操作，並且大部分Python擁有的功能他都有，所以可以把它當作一個Python的線上練習場，或是讓沒有學JavaScript的人可以使用Python編輯 。
+Brython 由於不用下載 Python可以直接在網路上操作，並且大部分Python擁有的功能他都有，所以可以把它當作一個Python的線上練習場，或是讓沒有學JavaScript的人可以使用Python編輯 。
 </p>
 """
-slide5.add_content([content_cmsimde])
+slide7.add_content([content_cmsimde])
+p.add_slide(slide7)
+
+#===w8===
+slide8 = Slide()
+slide8.add_title('<span style="font-size:50px;">如何在瀏覽器配置 Brython 環境？</span>')
+
+content_brython = """
+<div style="margin-top:-20px;">  <!-- 將內文往上拉近標題 -->
+<p class="fragment" style="font-size:30px;">1.載入 Brython 主程式：這是一個巨大的 JavaScript 檔，裡面包含 Python-to-JS 轉譯器。</p>
+<p class="fragment" style="font-size:30px;">2.初始化 Brython 系統：你在 &lt;body&gt; 裡面寫 onload="brython()"，就是告訴瀏覽器「頁面載入後啟動 Brython」。</p>
+<p class="fragment" style="font-size:30px;">3.Brython 掃描整個 HTML 文件：它會尋找 &lt;script type="text/python"&gt; 這種標籤。</p>
+<p class="fragment" style="font-size:30px;">4.轉譯與執行：Brython 把每一段 Python 程式碼轉成 JavaScript，在瀏覽器裡執行。</p>
+<p class="fragment" style="font-size:30px;">5.操作 DOM 或輸出結果：你的 Python 程式就能控制網頁上的內容，就像 JS 一樣。</p>
+</div>
+"""
+slide8.add_content([content_brython])
 p.add_slide(slide8)
 
 
