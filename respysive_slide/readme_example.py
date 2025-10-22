@@ -83,6 +83,35 @@ slide6 = Slide(center=True)
 slide6.add_title('<span style="font-size:50px;">感謝聆聽<br>報告完畢</span>')
 p.add_slide(slide6)
 
+#===w7_1===
+slide7 = Slide()
+slide7.add_title('<span style="font-size:50px;">Brython 是什麼?</span>')
+content_cmsimde = """
+<p style="font-size:30px;">
+Brython 是一用來將Python的語言轉換成 JavaScript 來讓瀏覽器可以讀懂。
+</p>
+"""
+slide5.add_content([content_cmsimde])
+p.add_slide(slide7)
+
+
+#===w7_2===
+slide8 = Slide()
+slide8.add_title('<span style="font-size:50px;"> Brython 能做什麼？</span>')
+content_cmsimde = """
+<p style="font-size:30px;">
+Brython 由於不用下載 Python ，他可以直接在網路上操作，並且大部分Python擁有的功能他都有，所以可以把它當作一個Python的線上練習場，或是讓沒有學JavaScript的人可以使用Python編輯 。
+</p>
+"""
+slide5.add_content([content_cmsimde])
+p.add_slide(slide8)
+
+
+# === 最後一張投影片：感謝聆聽_w7 ===
+slide9 = Slide(center=True)
+slide9.add_title('<span style="font-size:50px;">感謝聆聽<br>報告完畢</span>')
+p.add_slide(slide9)
+
 # === 生成 HTML 簡報 ===
 p.save_html("my_presentation.html")
 print("簡報生成完成！請使用瀏覽器打開 my_presentation.html")
