@@ -20,7 +20,39 @@
 <p>一開始我什麼都不會就連github的使用經驗都沒有，所以我剛開始很不能理解每一個指令代表的背後意義，而老師又出了一份對於當時的我而言相當有難度的作業，因此在w2~w4這幾個禮拜我過得相當煎熬，每個假日都花了部分時間了解研究，並在課程結束後詢問老師才得以明白網頁是如何生成出來的。</p>
 <p>到了w5~w8這段時間我漸漸熟悉可攜程式的一些模組後，我開始嘗試利用老師在可攜程式裡給予的一些模組，進行神經網絡的研究，結果做者做者就把自己的電腦玩到當機，原因是因為我並沒有使用虛擬主機來去跑ai的一些模組，而是直接在windos的系統裡面再建了liunx的系統，導致系統錯亂，但這個幸好只要電腦重灌就可以解決了。但透過上述也證明了我對於可攜程式有一定的了解。</p>
 <p>到了期中過後，漸漸地有許多同學消失了也有需多同依然奮鬥者，而我也是其中一位，老師分配了小組倉儲，我才開始明白，原來期中之前只是學會怎麼用工具，現在開始是要學會怎麼應用，但現在的我與前中前的我已經截然不同了，因為我已熟悉工具了，因此老師在上課期間教學的近端、遠端、伺服器，我基本駕輕就熟，我的組員也會在有問題時像我提出，我也盡我所能的幫忙組員解惑，在平常非組員的同學也會來請求幫忙。可能是因為對於工具的熟悉及一些指令相對熟悉，因此在幫忙解決問題時，我看到ai給的建議時，我可以快速判斷並加以使用。</p>
-<p>最後這門課程讓我學習到了許多知識github的使用、簡易伺服器的架設、網頁程式語言的編寫等等，雖然這些都還只是通往制做神經網絡的大們，但對於日後再研究上也有了個方向。</p><h1>Topics</h1>
+<p>最後這門課程讓我學習到了許多知識github的使用、簡易伺服器的架設、網頁程式語言的編寫等等，雖然這些都還只是通往制做神經網絡的大們，但對於日後再研究上也有了個方向。</p>
+<h1>Report</h1>
+<p>學習心得報告主題:</p>
+<p>w3、w7、w10、w14、w17、w18</p>
+<p><strong></strong></p>
+<h2>第三周</h2>
+<p style="padding-left: 30px;"><strong>什麼是 git?</strong><br/>Git 是「版本控制系統（Version Control System, VCS）」，專門用來管理程式碼或任何文件的變化歷史。</p>
+<p style="padding-left: 30px;">它能記錄每一次修改，讓你隨時回到過去的版本，並且支援多人協作，不會互相覆蓋對方的修改。</p>
+<p style="padding-left: 30px;">以下是使用方法</p>
+<p style="padding-left: 30px;"># 初始化一個 Git 倉庫<br/>git init</p>
+<p style="padding-left: 30px;"># 查看檔案狀態<br/>git status</p>
+<p style="padding-left: 30px;"># 新增檔案到暫存區<br/>git add filename</p>
+<p style="padding-left: 30px;"># 提交修改<br/>git commit -m "說明文字"</p>
+<p style="padding-left: 30px;"># 查看提交歷史<br/>git log</p>
+<p style="padding-left: 30px;"><strong>為什麼要用</strong></p>
+<p style="padding-left: 30px;">避免丟失程式碼或文件。</p>
+<p style="padding-left: 30px;">可以追蹤每個修改的原因和作者。</p>
+<p style="padding-left: 30px;">支援多人協作，能解決衝突（merge conflict）</p>
+<p style="padding-left: 30px;"><strong>什麼是GitHub?</strong></p>
+<p style="padding-left: 30px;">GitHub 是「線上 Git 倉庫服務平台」，可以把你的 Git 倉庫放到雲端。</p>
+<p style="padding-left: 30px;"><strong>使用方法</strong></p>
+<p style="padding-left: 30px;"># 把本地 Git 倉庫連接到 GitHub<br/>git remote add origin https://github.com/username/repo.git</p>
+<p style="padding-left: 30px;"># 推送本地修改到 GitHub<br/>git push origin main</p>
+<p style="padding-left: 30px;"># 從 GitHub 抓取最新版本<br/>git pull origin main</p>
+<p style="padding-left: 30px;"><strong>為什麼要用</strong></p>
+<p style="padding-left: 30px;">雲端備份，不怕本地電腦壞掉。</p>
+<p style="padding-left: 30px;">開源分享，方便協作和學習。</p>
+<p style="padding-left: 30px;">提供社群和專案管理功能（issue、wiki、action）。</p><h2>第7周如何在瀏覽器中模擬機器人作動？</h2>
+<h2>第10周在瀏覽器中模擬機器人作動的目的是什麼？</h2>
+<h2>第14周</h2>
+<h2>第17周</h2>
+<h2>第18周</h2>
+<h1>Topics</h1>
 <h2>w1</h2>
 <p>利用 Codespaces 維護 Github Pages 網站內容</p>
 <p>利用 portable_2026 可攜系統維護 Github Pages 網站內容</p>
@@ -507,7 +539,7 @@ if __name__ == "__main__":
 &lt;/body&gt;
 &lt;/html&gt;
 </pre>
-<p>Git 操作由使用者本地負責（非後端）<br/><br/>功能描述：使用者在本地透過 CLI 執行 Git 操作，使用自己的身份進行 commit 與 push。<br/><br/>指令建議（你可印在前端或 README 中）</p>
+<p>Git 操作由使用者本地負責（非後端）<br/><br/>功能描述：使用者在本地透過 CLI 執行 Git 操作，使用自己的身份進行 commit 與 push。<br/><br>指令建議（你可印在前端或 README 中）</br></p>
 <pre class="brush:js;auto-links:false;toolbar:false" contenteditable="false"># 取得最新版本
 git pull origin main
 
