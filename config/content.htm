@@ -15,8 +15,26 @@
 <p style="padding-left: 60px;">w18: 課程總結</p>
 <p style="padding-left: 30px;"><span style="background-color: #ffff00;">個人與分組網站維護 (40%)</span> - 每週至少兩次推送與課程進度相關的學習內容與心得。</p>
 <p style="padding-left: 60px;">w9 期中自評、w18 期末自評</p>
-<p></p>
-<h1>Report</h1>
+<h1>Note</h1>
+<p><strong>以下是我從w2~w17這期間內的所有筆記內容</strong></p>
+<p>暫存修改<br/>git add .</p>
+<p>提交修改<br/>git commit -m "更新!"</p>
+<p>檢查工作目錄狀態<br/>git status</p>
+<p>推送到遠端<br/>git push origin main</p>
+<p>用cms查詢網路<br/>cms</p>
+<p>開啟組別網址<br/>https://127.0.0.1:9443<br/>(只有本地端開起來後才能執行)</p>
+<p>進入後輸入admin登入</p>
+<p>在git上開啟修改簡報<br/>notepad Y:\tmp\work\respysive_slide\readme_example.py</p>
+<p>完成後執行<br/>python Y:\tmp\work\respysive_slide\readme_example.py</p>
+<p>----------------------------------------------<br/>建立分支<br/>git branch 學號</p>
+<p>切換分支<br/>git checkout 學號</p>
+<p>暫存修改<br/>git add .</p>
+<p>檢查工作目錄狀態<br/>git status</p>
+<p>提交修改<br/>git commit -m "更新!"</p>
+<p>推送到自己分支的遠端<br/>git push --set-upstream origin 學號</p>
+<p>如果要合併就照以下步驟"一行一行"的輸入CMS<br/>git checkout main<br/>git pull origin main --rebase<br/>git merge 41423230<br/>git push origin main</p>
+<p>分隔線以下是在教怎麼建立分支(記住是在自己的電腦上打這些指令，就是在CMS上做啦~~!)，這樣大家建立好分支後就不會直接覆蓋掉主分支的檔案，上傳的檔案也只會在自己的分支上，之後簡報我再引用分支上的內容就好了。分隔線以下的學號請改成自己的學號</p>
+<p>-----------------------------------------------------------<br/>開啟本地端AI<br/>ollama run<br/>檢視模型種類<br/>ollama list<br/>儲存對話<br/>/save<br/>---------------------------------------------------------<br/>讓程式可以在伺服器上永久執行<br/>先切換至檔案存在的資料夾<br/>由於只有使用者權限因此使用nohup的方式執行檔案<br/>nohup python3 run_server.py &gt; server.log 2&gt;&amp;1 &amp;<br/>確認執行<br/>tail -f server.log<br/>ctrl+c切回cmd對話視窗<br/>用查詢背景正在執行的PID<br/>ps aux | grep run_server.py<br/>用 pkill一次清掉所有process<br/>pkill -f run_server.py<br/>查誰佔著 8023<br/>lsof -i<br/>----------------------------------------------------<br/>遠端伺服器執行<br/>輸入帳號<br/>ssh a35@s5.eng.nfu.edu.tw<br/>切換至1-1目錄<br/>cd 1-1<br/>切換至1-1下的1資料夾<br/>cd 1<br/>用python3執server.py檔案<br/>python3 server.py<br/>開啟網址(組員只需網址即可上去編輯)<br/>https://s5.eng.nfu.edu.tw:9035<br/>其餘以此類推</p><h1>Report</h1>
 <p>學習心得報告主題:</p>
 <p>w3、w7、w10、w14、w17、w18</p>
 <p><strong></strong></p>
@@ -268,7 +286,8 @@ document["myButton"].bind("click", say_hello)
 <p>如果要合併就照以下步驟"一行一行"的輸入CMS<br/>git checkout main<br/>git pull origin main --rebase<br/>git merge 41423230<br/>git push origin main</p>
 <p>分隔線以下是在教怎麼建立分支(記住是在自己的電腦上打這些指令，就是在CMS上做啦~~!)，這樣大家建立好分支後就不會直接覆蓋掉主分支的檔案，上傳的檔案也只會在自己的分支上，之後簡報我再引用分支上的內容就好了。分隔線以下的學號請改成自己的學號</p>
 <p>-----------------------------------------------------------<br/>開啟本地端AI<br/>ollama run<br/>檢視模型種類<br/>ollama list<br/>儲存對話<br/>/save<br/>---------------------------------------------------------<br/>讓程式可以在伺服器上永久執行<br/>先切換至檔案存在的資料夾<br/>由於只有使用者權限因此使用nohup的方式執行檔案<br/>nohup python3 run_server.py &gt; server.log 2&gt;&amp;1 &amp;<br/>確認執行<br/>tail -f server.log<br/>ctrl+c切回cmd對話視窗<br/>用查詢背景正在執行的PID<br/>ps aux | grep run_server.py<br/>用 pkill一次清掉所有process<br/>pkill -f run_server.py<br/>查誰佔著 8023<br/>lsof -i<br/>----------------------------------------------------<br/>遠端伺服器執行<br/>輸入帳號<br/>ssh a35@s5.eng.nfu.edu.tw<br/>切換至1-1目錄<br/>cd 1-1<br/>切換至1-1下的1資料夾<br/>cd 1<br/>用python3執server.py檔案<br/>python3 server.py<br/>開啟網址(組員只需網址即可上去編輯)<br/>https://s5.eng.nfu.edu.tw:9035<br/>其餘以此類推</p>
-<p></p><h1>Topics</h1>
+<p></p>
+<h1>Topics</h1>
 <h2>w1</h2>
 <p>利用 Codespaces 維護 Github Pages 網站內容</p>
 <p>利用 portable_2026 可攜系統維護 Github Pages 網站內容</p>
