@@ -131,7 +131,7 @@ img.add_border {
                             <li><a href="./../blog/index.html">blog</a></li>
                         </ul>
                       </li>
-                     <li><a href='About.html'>About</a><li><a href='心得.html'>心得</a><li class='has-children'><a href='Report.html'>Report</a><ul class='dropdown'><li><a href='第三周.html'>第三周</a><li><a href='第7周如何在瀏覽器中模擬機器人作動？.html'>第7周如何在瀏覽器中模擬機器人作動？</a><li><a href='第10周在瀏覽器中模擬機器人作動的目的是什麼？.html'>第10周在瀏覽器中模擬機器人作動的目的是什麼？</a><li><a href='第14周.html'>第14周</a><li><a href='第17周.html'>第17周</a><li><a href='第18周.html'>第18周</a></li></ul><li class='has-children'><a href='Topics.html'>Topics</a><ul class='dropdown'><li><a href='w1.html'>w1</a><li><a href='w2.html'>w2</a><li><a href='w3.html'>w3</a><li><a href='w5-w12.html'>w5-w12</a><li><a href='w7.html'>w7</a><li><a href='w7 1b 題目.html'>w7 1b 題目</a><li><a href='w8.html'>w8</a><li><a href='W9虛擬主機用法.html'>W9虛擬主機用法</a></li></ul><li><a href='Code.html'>Code</a><li><a href='Project.html'>Project</a><li><a href='Python.html'>Python</a><li class='has-children'><a href='Brython.html'>Brython</a><ul class='dropdown'><li><a href='Pyodide3.html'>Pyodide3</a></li>
+                     <li><a href='About.html'>About</a><li><a href='心得.html'>心得</a><li class='has-children'><a href='Report.html'>Report</a><ul class='dropdown'><li><a href='第3周.html'>第3周</a><li><a href='第7周.html'>第7周</a><li><a href='第10周.html'>第10周</a><li><a href='第14周.html'>第14周</a><li><a href='第17周.html'>第17周</a><li><a href='第18周.html'>第18周</a></li></ul><li class='has-children'><a href='Topics.html'>Topics</a><ul class='dropdown'><li><a href='w1.html'>w1</a><li><a href='w2.html'>w2</a><li><a href='w3.html'>w3</a><li><a href='w5-w12.html'>w5-w12</a><li><a href='w7.html'>w7</a><li><a href='w7 1b 題目.html'>w7 1b 題目</a><li><a href='w8.html'>w8</a><li><a href='W9虛擬主機用法.html'>W9虛擬主機用法</a></li></ul><li><a href='Code.html'>Code</a><li><a href='Project.html'>Project</a><li><a href='Python.html'>Python</a><li class='has-children'><a href='Brython.html'>Brython</a><ul class='dropdown'><li><a href='Pyodide3.html'>Pyodide3</a></li>
                       </ul>
                 </nav>
               </div>
@@ -142,8 +142,67 @@ img.add_border {
           </div>
           
         </header>
-    <div id="tipue_search_content">第7周如何在瀏覽器中模擬機器人作動？ << <a href='第7周如何在瀏覽器中模擬機器人作動？.html'>Previous</a> <a href='第14周.html'>Next</a> >> 第14周<br /><h1>第10周在瀏覽器中模擬機器人作動的目的是什麼？</h1>
-<br />第7周如何在瀏覽器中模擬機器人作動？ << <a href='第7周如何在瀏覽器中模擬機器人作動？.html'>Previous</a> <a href='第14周.html'>Next</a> >> 第14周</div>
+    <div id="tipue_search_content">第3周 << <a href='第3周.html'>Previous</a> <a href='第10周.html'>Next</a> >> 第10周<br /><h1>第7周</h1>
+<p>如何在瀏覽器中模擬機器人作動？</p>
+<p><strong>模擬物理機器人動作</strong></p>
+<p data-end="183" data-start="139">如果目標是「機器人動作模擬」，瀏覽器環境主要是做<strong data-end="176" data-start="163">三維或二維動畫模擬</strong>，常用工具有：</p>
+<ul data-end="529" data-start="185">
+<li data-end="357" data-start="185">
+<p data-end="238" data-start="187"><strong data-end="207" data-start="187">Three.js + WebGL</strong><br data-end="210" data-start="207"/> 可用於在瀏覽器中建模機器人關節、骨架和運動軌跡。</p>
+<ul data-end="357" data-start="241">
+<li data-end="284" data-start="241">
+<p data-end="284" data-start="243">可以用 <code data-end="269" data-start="247">THREE.SkeletonHelper</code> 來模擬機器人的骨架運動。</p>
+</li>
+<li data-end="336" data-start="287">
+<p data-end="336" data-start="289">配合動畫或物理引擎（如 <code data-end="312" data-start="301">Cannon.js</code> 或 <code data-end="324" data-start="315">Ammo.js</code>）可以模擬力學反應。</p>
+</li>
+<li data-end="357" data-start="339">
+<p data-end="357" data-start="341">適合教學、視覺化、原型設計。</p>
+</li>
+</ul>
+</li>
+<li data-end="422" data-start="359">
+<p data-end="422" data-start="361"><strong data-end="395" data-start="361">Blockly / Scratch + JavaScript</strong><br data-end="398" data-start="395"/> 可做簡單的關節控制模擬，用於教育或概念驗證。</p>
+</li>
+<li data-end="529" data-start="424">
+<p data-end="529" data-start="426"><strong data-end="454" data-start="426">Gazebo / ROS + WebSocket</strong><br data-end="457" data-start="454"/> 如果你要真實的控制機器人模型，可以把 ROS 模擬環境（Gazebo）和瀏覽器連接，用 WebSocket 控制機器人，瀏覽器顯示動畫。</p>
+</li>
+</ul>
+<p data-end="540" data-start="531"><strong data-end="539" data-start="531">實務思路</strong>：</p>
+<ol data-end="634" data-start="541">
+<li data-end="578" data-start="541">
+<p data-end="578" data-start="544">定義骨架與關節（Degrees of Freedom, DOF）</p>
+</li>
+<li data-end="599" data-start="579">
+<p data-end="599" data-start="582">用物理引擎模擬重力、摩擦、碰撞</p>
+</li>
+<li data-end="621" data-start="600">
+<p data-end="621" data-start="603">寫控制邏輯（如 PID 控制器）</p>
+</li>
+<li data-end="634" data-start="622">
+<p data-end="634" data-start="625">渲染到瀏覽器中</p>
+</li>
+</ol>
+<p><strong>2️⃣ 模擬軟體機器人（瀏覽器自動化）</strong></p>
+<p data-end="682" data-start="665">如果你想讓「機器人自動操作網頁」：</p>
+<ul data-end="1085" data-start="684">
+<li data-end="923" data-start="684">
+<p data-end="732" data-start="686"><strong data-end="709" data-start="686">JavaScript + DOM 操作</strong><br data-end="712" data-start="709"/> 瀏覽器本身就能模擬點擊、滾動、輸入：</p>
+<div class="contain-inline-size rounded-2xl corner-superellipse/1.1 relative bg-token-sidebar-surface-primary">
+<div class="overflow-y-auto p-4" dir="ltr"><code class="whitespace-pre! language-javascript"><span><span><span class="hljs-comment">// 模擬點擊按鈕</span></span><span> </span></span></code></div>
+<div class="overflow-y-auto p-4" dir="ltr"><code class="whitespace-pre! language-javascript"><span><span><span class="hljs-variable language_">document</span></span><span>.</span><span><span class="hljs-title function_">querySelector</span></span><span>(</span><span><span class="hljs-string">"#myButton"</span></span><span>).</span><span><span class="hljs-title function_">click</span></span><span>(); </span></span></code></div>
+<div class="overflow-y-auto p-4" dir="ltr"><code class="whitespace-pre! language-javascript"><span><span><span class="hljs-comment">// 模擬輸入</span></span><span> </span></span></code></div>
+<div class="overflow-y-auto p-4" dir="ltr"><code class="whitespace-pre! language-javascript"><span><span><span class="hljs-variable language_">document</span></span><span>.</span><span><span class="hljs-title function_">querySelector</span></span><span>(</span><span><span class="hljs-string">"#myInput"</span></span><span>).</span><span><span class="hljs-property">value</span></span><span> = </span><span><span class="hljs-string">"Hello"</span></span><span>;</span></span></code></div>
+<div class="overflow-y-auto p-4" dir="ltr">可以搭配 <code data-end="899" data-start="886">setInterval</code> 或 <code data-end="915" data-start="902">async/await</code> 控制行為節奏。</div>
+</div>
+</li>
+<li data-end="1033" data-start="925">
+<p data-end="1033" data-start="927"><strong data-end="953" data-start="927">Puppeteer / Playwright</strong><br data-end="956" data-start="953"/> Node.js 環境下可以遠端操控瀏覽器，模擬點擊、滾動、填表、截圖等。<br data-end="997" data-start="994"/> 適合自動化測試或爬蟲，但不完全在瀏覽器中執行，需要 Node.js。</p>
+</li>
+<li data-end="1085" data-start="1035">
+<p data-end="1085" data-start="1037"><strong data-end="1048" data-start="1037">瀏覽器擴充插件</strong><br data-end="1051" data-start="1048"/> 比如 Tampermonkey，可以用腳本自動化瀏覽器操作。</p>
+</li>
+</ul><br />第3周 << <a href='第3周.html'>Previous</a> <a href='第10周.html'>Next</a> >> 第10周</div>
         
     <!-- footer -->
       <div class="container">

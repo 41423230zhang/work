@@ -25,7 +25,7 @@
 <p>學習心得報告主題:</p>
 <p>w3、w7、w10、w14、w17、w18</p>
 <p><strong></strong></p>
-<h2>第三周</h2>
+<h2>第3周</h2>
 <p style="padding-left: 30px;"><strong>什麼是 git?</strong><br/>Git 是「版本控制系統（Version Control System, VCS）」，專門用來管理程式碼或任何文件的變化歷史。</p>
 <p style="padding-left: 30px;">它能記錄每一次修改，讓你隨時回到過去的版本，並且支援多人協作，不會互相覆蓋對方的修改。</p>
 <p style="padding-left: 30px;">以下是使用方法</p>
@@ -62,16 +62,13 @@
 <p data-end="1059" data-start="1048" style="padding-left: 30px;"><strong>什麼是 CMSimde？</strong></p>
 <p data-end="1059" data-start="1048" style="padding-left: 30px;">CMSimde 是基於 Python、HTML、CSS、JavaScript 等 Web 技術的一套內容管理系統（CMS）。CMS 這種系統的主要目的，是讓使用者能夠在瀏覽器上編輯和維護一個網站的內容，而不需要每次都直接改 HTML 原始檔。</p>
 <p data-end="1059" data-start="1048" style="padding-left: 30px;"><strong data-end="1057" data-start="1048">使用方法</strong></p>
-<p data-end="1059" data-start="1048" style="padding-left: 30px;"><strong data-end="1057" data-start="1048"></strong></p>
 <ul>
 <li data-end="756" data-start="662">
 <p data-end="756" data-start="665">設定 Python 環境<br data-end="684" data-start="681"/> 安裝 Python 或 miniconda，建立專用的虛擬環境。<span class="" data-state="closed"><span class="ms-1 inline-flex max-w-full items-center relative top-[-0.094rem] animate-[show_150ms_ease-in]" data-testid="webpage-citation-pill"></span></span></p>
 </li>
 <li data-end="957" data-start="758">
 <p data-end="822" data-start="761">安裝相依套件<br data-end="774" data-start="771"/> 利用 <code data-end="795" data-start="780">conda install</code> 或 <code data-end="811" data-start="798">pip install</code> 安裝必要套件，例如：</p>
-<div class="contain-inline-size rounded-2xl corner-superellipse/1.1 relative bg-token-sidebar-surface-primary">
-<div class="overflow-y-auto p-4" dir="ltr"><code class="whitespace-pre!"><span class="hljs-attribute">flask</span> flask_cors bs4 lxml pelican markdown gevent </code></div>
-</div>
+<p data-end="822" data-start="761"><span class="hljs-attribute">flask</span> flask_cors bs4 lxml pelican markdown gevent</p>
 <p data-end="957" data-start="895">這些是 CMSimde 需要的後端與內容處理工具。<span class="" data-state="closed"><span class="ms-1 inline-flex max-w-full items-center relative top-[-0.094rem] animate-[show_150ms_ease-in]" data-testid="webpage-citation-pill"></span></span></p>
 </li>
 <li data-end="1069" data-start="959">
@@ -90,8 +87,67 @@
 <li data-end="1261" data-start="1133"><strong data-end="1336" data-start="1319">提高網站內容管理效率</strong><br data-end="1339" data-start="1336"/> CMSimte 幫你把網站內容抽象化，不用每次手寫 HTML、CSS、JavaScript，你只要在 Web 上編輯內容，就能管理網頁。</li>
 </ul>
 <p></p>
-<p></p><h2>第7周如何在瀏覽器中模擬機器人作動？</h2>
-<h2>第10周在瀏覽器中模擬機器人作動的目的是什麼？</h2>
+<p></p><h2>第7周</h2>
+<p>如何在瀏覽器中模擬機器人作動？</p>
+<p><strong>模擬物理機器人動作</strong></p>
+<p data-end="183" data-start="139">如果目標是「機器人動作模擬」，瀏覽器環境主要是做<strong data-end="176" data-start="163">三維或二維動畫模擬</strong>，常用工具有：</p>
+<ul data-end="529" data-start="185">
+<li data-end="357" data-start="185">
+<p data-end="238" data-start="187"><strong data-end="207" data-start="187">Three.js + WebGL</strong><br data-end="210" data-start="207"/> 可用於在瀏覽器中建模機器人關節、骨架和運動軌跡。</p>
+<ul data-end="357" data-start="241">
+<li data-end="284" data-start="241">
+<p data-end="284" data-start="243">可以用 <code data-end="269" data-start="247">THREE.SkeletonHelper</code> 來模擬機器人的骨架運動。</p>
+</li>
+<li data-end="336" data-start="287">
+<p data-end="336" data-start="289">配合動畫或物理引擎（如 <code data-end="312" data-start="301">Cannon.js</code> 或 <code data-end="324" data-start="315">Ammo.js</code>）可以模擬力學反應。</p>
+</li>
+<li data-end="357" data-start="339">
+<p data-end="357" data-start="341">適合教學、視覺化、原型設計。</p>
+</li>
+</ul>
+</li>
+<li data-end="422" data-start="359">
+<p data-end="422" data-start="361"><strong data-end="395" data-start="361">Blockly / Scratch + JavaScript</strong><br data-end="398" data-start="395"/> 可做簡單的關節控制模擬，用於教育或概念驗證。</p>
+</li>
+<li data-end="529" data-start="424">
+<p data-end="529" data-start="426"><strong data-end="454" data-start="426">Gazebo / ROS + WebSocket</strong><br data-end="457" data-start="454"/> 如果你要真實的控制機器人模型，可以把 ROS 模擬環境（Gazebo）和瀏覽器連接，用 WebSocket 控制機器人，瀏覽器顯示動畫。</p>
+</li>
+</ul>
+<p data-end="540" data-start="531"><strong data-end="539" data-start="531">實務思路</strong>：</p>
+<ol data-end="634" data-start="541">
+<li data-end="578" data-start="541">
+<p data-end="578" data-start="544">定義骨架與關節（Degrees of Freedom, DOF）</p>
+</li>
+<li data-end="599" data-start="579">
+<p data-end="599" data-start="582">用物理引擎模擬重力、摩擦、碰撞</p>
+</li>
+<li data-end="621" data-start="600">
+<p data-end="621" data-start="603">寫控制邏輯（如 PID 控制器）</p>
+</li>
+<li data-end="634" data-start="622">
+<p data-end="634" data-start="625">渲染到瀏覽器中</p>
+</li>
+</ol>
+<p><strong>2️⃣ 模擬軟體機器人（瀏覽器自動化）</strong></p>
+<p data-end="682" data-start="665">如果你想讓「機器人自動操作網頁」：</p>
+<ul data-end="1085" data-start="684">
+<li data-end="923" data-start="684">
+<p data-end="732" data-start="686"><strong data-end="709" data-start="686">JavaScript + DOM 操作</strong><br data-end="712" data-start="709"/> 瀏覽器本身就能模擬點擊、滾動、輸入：</p>
+<div class="contain-inline-size rounded-2xl corner-superellipse/1.1 relative bg-token-sidebar-surface-primary">
+<div class="overflow-y-auto p-4" dir="ltr"><code class="whitespace-pre! language-javascript"><span><span><span class="hljs-comment">// 模擬點擊按鈕</span></span><span> </span></span></code></div>
+<div class="overflow-y-auto p-4" dir="ltr"><code class="whitespace-pre! language-javascript"><span><span><span class="hljs-variable language_">document</span></span><span>.</span><span><span class="hljs-title function_">querySelector</span></span><span>(</span><span><span class="hljs-string">"#myButton"</span></span><span>).</span><span><span class="hljs-title function_">click</span></span><span>(); </span></span></code></div>
+<div class="overflow-y-auto p-4" dir="ltr"><code class="whitespace-pre! language-javascript"><span><span><span class="hljs-comment">// 模擬輸入</span></span><span> </span></span></code></div>
+<div class="overflow-y-auto p-4" dir="ltr"><code class="whitespace-pre! language-javascript"><span><span><span class="hljs-variable language_">document</span></span><span>.</span><span><span class="hljs-title function_">querySelector</span></span><span>(</span><span><span class="hljs-string">"#myInput"</span></span><span>).</span><span><span class="hljs-property">value</span></span><span> = </span><span><span class="hljs-string">"Hello"</span></span><span>;</span></span></code></div>
+<div class="overflow-y-auto p-4" dir="ltr">可以搭配 <code data-end="899" data-start="886">setInterval</code> 或 <code data-end="915" data-start="902">async/await</code> 控制行為節奏。</div>
+</div>
+</li>
+<li data-end="1033" data-start="925">
+<p data-end="1033" data-start="927"><strong data-end="953" data-start="927">Puppeteer / Playwright</strong><br data-end="956" data-start="953"/> Node.js 環境下可以遠端操控瀏覽器，模擬點擊、滾動、填表、截圖等。<br data-end="997" data-start="994"/> 適合自動化測試或爬蟲，但不完全在瀏覽器中執行，需要 Node.js。</p>
+</li>
+<li data-end="1085" data-start="1035">
+<p data-end="1085" data-start="1037"><strong data-end="1048" data-start="1037">瀏覽器擴充插件</strong><br data-end="1051" data-start="1048"/> 比如 Tampermonkey，可以用腳本自動化瀏覽器操作。</p>
+</li>
+</ul><h2>第10周在瀏覽器中模擬機器人作動的目的是什麼？</h2>
 <h2>第14周</h2>
 <h2>第17周</h2>
 <h2>第18周</h2>
